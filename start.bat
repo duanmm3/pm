@@ -1,0 +1,21 @@
+@echo off
+echo ============================================
+echo    PM System Startup Script (Windows)
+echo ============================================
+echo.
+
+cd /d "C:/Apps/PM/front"
+
+echo [Step 1/2] Installing dependencies...
+call npm install
+
+echo.
+echo [Step 2/2] Starting dev server...
+call npm run dev
+
+echo.
+echo ============================================
+echo    Done! Please visit: http://localhost:5173
+echo ============================================
+
+pause
